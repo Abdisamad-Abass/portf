@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+body {
+    background: white;
+}
+
+/* .. header section .. */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+    box-shadow: 0 10px 10px rgba(252, 7, 7, 0.7);
+    position: fixed;
+    top: 0;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+}
+.logo {
+    width: 280px;
+    height: 17vh;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 20px 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: 500;
+}
+#navbar li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.active::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    bottom: -5px;
+    left: 10%;
+    background: #ff07de;
+}
+#mobile {
+    display: none;
+    align-items: center;
+}
+#close {
+    display: none;
+}
+
+
+
+/* hero section*/
+.container {
+    position: relative;
+    width: 100%;
+    height: 56vh;
+}
+.my-details1 {
+    margin-top: 350px;
+    margin-left: 100px;
+}
+.My-Name{
+    font-size: 50px;
+    color: black;
+}
+.name{
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ff0101;
+    background-color: url('images/anim.jpg');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 500px 0;
+    }
+}
+.container h1 {
+    font-size: 50px;
+    padding-top: 10px;
+    color: blue;
+}
+.detail {
+    transition: none;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+.profiles {
+    font-size: 40px;
+    
+}
+.profiles a{
+    padding-left: 20px;
+}
+
+.icon {
+    color: #05fd05;
+}
+.icon:hover {
+    color: #ff07de;
+}
+.auto-type {
+    position: absolute;
+}
+
+.details {
+    margin-top: 40px; 
+    margin-left: 20px;
+}
+button {
+    width: 180px;
+    height: 7vh;
+    background: transparent;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid #05fd05;
+    
+}
+button:hover {
+    background: yellow;
+    border: 4px solid red;
+    color: #ff07de;
+}
+button.cv {
+    color: blue;
+    font-size: 25px;
+}
+button#contact {
+    font-size: 25px;
+    color: blue;
+    margin-left: 15px;
+}
+.contact {
+    color: black;
+    margin-left: 10px;
+}
+.download {
+    color: black;
+    margin-left: 10px;
+}
+.pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.abdi{
+    position: absolute;
+    width: 400px;
+    height: 80vh;
+    right: 20%;
+    bottom: 0;
+}
+.down {
+    position: absolute;
+    bottom: 4px;
+    left: 48%;
+    font-size: 40px;
+    color: #1f1d1d;
+}
+
+/* About section */
+.about {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #05fd05;
+    width: 100%;
+    height: 95vh;
+}
+.photo {
+    width: 200px;
+    height: 30vh;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+.about img {
+    border-radius: 25%;
+}
+.aboutme {
+    width: 50%;
+    margin-right: 200px;
+    margin-top: 180px;
+    margin-left: 100px;
+    line-height: 1.2;
+}
+.aboutme h1 {
+    font-size: 40px;
+}
+.aboutme p {
+    font-size: 25px;
+}
+.star {
+    font-size: 30px;
+    
+}
+p1 {
+    margin-left: 9px;
+    font-size: 30px;
+    color: #fd0202;
+}
+.down2 {
+    position: absolute;
+    bottom: 2px;
+    left: 48%;
+    font-size: 40px;
+    color: #1f1d1d;
+}
+
+
+/* education section */
+.education {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background: #ccc;
+}
+.educ-details {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+.edu {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.edu::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #0537fd;
+    bottom: -8px;
+    left: 0;
+}
+.edu.work-name {
+    margin-left: 155px;
+}
+.course {
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.univer-intake {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+.univer {
+    position: relative;
+    margin-left: -585px;
+    margin-top: 180px;
+    font-style: italic;
+}
+.intake-list {
+    list-style: disc;
+    padding-left: 40px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.course.work {
+    margin-left: 150px;
+}
+.intake {
+    margin-top: 180px;
+}
+hr {
+    margin-top: 60px;
+}
+
+.down3 {
+    position: absolute;
+    bottom: 2px;
+    left: 48%;
+    font-size: 40px;
+    color: #1f1d1d;
+}
+
+
+/* Skills Section */
+.container1 {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-top: 200px;
+    width: 90%;
+    height: 80vh;
+    
+}
+ 
+/* first row ..... first column ...*/
+.head-skills {
+        position: relative;
+}
+.head-skills::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #0537fd;
+    bottom: -8px;
+    left: 0;
+}
+
+/* first row  .... second column .... */
+.second {
+    margin-left: 180px;
+    width: 30%;
+}
+.front {
+    margin-left: 100px;
+    font-size: 30px;
+}
+.lang {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0537fd;
+}
+.lang.lang2 {
+    margin-top: 30px;
+}
+.lang.lang3 {
+    margin-top: 30px;
+}
+.bar {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    margin-top: 3px;
+}
+.perc {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 25px;
+    background: #ffa200;
+    border-radius: 25px;
+    animation: progress 0.4s ease-in-out forwards;
+}
+.perc.css {
+    width: 98%;
+}
+.perc.javascript {
+    width: 80%;
+}
+.tip {
+    position: absolute;
+    right: -16px;
+    top: -32px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 5px;
+    background: #ffa200;
+}
+.tip::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 11px;
+    width: 11px;
+    z-index: -1;
+    background: #ffa200;
+    transform: translateX(-50%) rotate(45deg);
+}
+/* first row .....  third column ....*/
+.second.third {
+    margin-left: 180px;
+}
+/* second row .... first Column */
+.second.forth {
+    flex-direction: column;
+    margin-left: 250px;
+}
+.front.databases {
+    margin-left: 150px;
+}
+
+/* second row .... second column */
+.second.fifth {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Me part */
+.about2 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #05fd05;
+    width: 100%;
+    height: 100vh;
+}
+.photo2 {
+    width: 200px;
+    height: 30vh;
+    margin-top: 180px;
+    margin-left: 100px;
+}
+.about2 img {
+    border-radius: 25%;
+}
+.aboutme2 {
+    width: 50%;
+    margin-right: 200px;
+    margin-top: 180px;
+    margin-left: 100px;
+    line-height: 1.2;
+}
+.aboutme2 h1 {
+    font-size: 40px;
+}
+.aboutme2 p {
+    font-size: 25px;
+}
+.star2 {
+    font-size: 30px;
+    
+}
+p1 {
+    margin-left: 9px;
+    font-size: 30px;
+    color: #fd0202;
+}
+.down2 {
+    position: absolute;
+    bottom: 2px;
+    left: 48%;
+    font-size: 40px;
+    color: #1f1d1d;
+}
+
+
+
+
+
+
+
+/* Screen Outfits 799px */
+@media (max-width: 799px) {
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 1vh;
+        box-shadow: 0 10px 10px rgba(252, 7, 7, 0.7);
+        position: fixed;
+        top: 0;
+        background-color: black;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+/* header section */
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 11vh;
+        box-shadow: 0 10px 10px rgba(252, 7, 7, 0.7);
+        position: fixed;
+        top: 0;
+        background-color: black;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #c42c4b;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #navbar li{
+        margin-bottom: 30px;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color: #0847f4;
+        font-size: 50px;
+        padding-right: 50px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 25px;
+        transition: 0.3s ease;
+    }
+    .logo {
+        width: 150px;
+        height: 11vh;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+/* hero section */
+    .container {
+        position: relative;
+        width: 100%;
+        height: 45vh;
+        margin-left: 0;
+    }
+    .my-details1 {
+        margin-left: 30px;
+    }
+    .detail {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .My-Name {
+        font-size: 30px;
+        color: black;
+        left: 0;
+    }
+    .abdi {
+        position: absolute;
+        width: 300px;
+        height: 60vh;
+        right: 0;
+        bottom: 0;
+    }
+
+    /* About section */
+    .about {
+        height: 80vh;
+    }
+    .photo {
+        width: 200px;
+        height: 30vh;
+        margin-top: 150px;
+        margin-left: 20px;
+    }
+    .aboutme {
+        margin-right: 10px;
+        margin-top: 150px;
+        margin-left: 30px;
+        line-height: 1;
+    }
+    
+    /* Education Section */
+    .edu {
+        position: relative;
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .course {
+        margin-top: 150px;
+        margin-left: 40px;
+    }
+    .course.work {
+        margin-left: 95px;
+    }
+    .edu.work-name {
+        margin-left: 15px;
+    }
+    /* Skills section */
+    .container1 {
+        margin-left: 20px;
+        margin-top: 60px;
+        width: 90%;
+        height: 80vh;
+    }
+    .second {
+        margin-left: 70px;
+        width: 30%;
+    }
+    .front {
+        margin-left: 20px;
+        font-size: 19px;
+    }
+    .lang {
+        font-size: 20px;
+        margin-top: 15px;
+        color: #0537fd;
+    }
+    .second.third {
+        margin-left: 100px;
+    }
+    .second.forth {
+        margin-top: 0;
+        margin-left: 150px;
+    }
+    .second.fifth {
+        margin-left: 100px;
+    }
+    .front.databases {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 429px) {
+    /* header section */
+    #header {
+        width: 100%;
+        height: 10vh;
+       
+    }
+    #navbar {
+        
+        height: 100vh;
+        width: 200px;
+    }
+    #navbar li {
+        margin-bottom: 10px;
+    }
+    #mobile i {
+        font-size: 30px;
+        padding-right: 50px;
+    }
+
+/* hero section  */
+    .container {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        margin-top: 10px;
+        margin-left: 0;
+        left: 0;
+    }
+    .abdi {
+        position: absolute;
+        width: 150px;
+        height: 45vh;
+        right: 0;
+        bottom: 0;
+    }
+    .my-details1 {
+        margin-top: 180px;
+        margin-left: 10px;
+    }
+    .My-Name {
+        font-size: 20px;
+        color: black;
+        left: 0;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .container h1 {
+        font-size: 20px;
+        padding-top: 10px;
+        color: blue;
+    }
+    .detail {
+        transition: none;
+        position: relative;
+        margin-top: 70px;
+        margin-left: 0;
+    }
+    .profiles {
+        font-size: 20px;
+    }
+    .details {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    button {
+        width: 93px;
+        height: 5vh;
+        background: transparent;
+        padding: 2px;
+        border-radius: 25px;
+        border: 3px solid #05fd05;
+    }
+    button.cv {
+        color: blue;
+        font-size: 15px;
+    }
+    button#contact {
+        font-size: 15px;
+        color: blue;
+    }
+
+    /* about section */
+    .about {
+        width: 100%;
+        height: 70vh;
+    }
+    .photo {
+        width: 100px;
+        height: 10vh;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .aboutme {
+        width: 90%;
+        margin-right: 20px;
+        margin-top: 100px;
+        margin-left: 18px;
+        line-height: 1;
+    }
+    .aboutme p {
+        font-size: 17px;
+    }
+    p1 {
+        margin-left: 9px;
+        font-size: 20px;
+        color: #fd0202;
+    }
+
+    /* education section */
+    .education {
+        position: relative;
+        width: 100%;
+        height: 65vh;
+        background: #ccc;
+    }
+    .edu {
+        position: relative;
+        margin-top: 100px;
+        margin-left: 5px;
+        font-size: 11px;
+    }
+    .course {
+        margin-top: 100px;
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .univer {
+        position: relative;
+        margin-left: -242px;
+        margin-top: 120px;
+        font-style: italic;
+        font-size: 10px;
+    }
+    .intake {
+        margin-top: 120px;
+    }
+    .intake-list {
+        list-style: disc;
+        padding-left: 40px;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .edu.work-name {
+        margin-left: 10px;
+    }
+    .course.work {
+        margin-left: 50px;
+    }
+
+    /* skills section */
+    .container1 {
+        margin-left: 10px;
+        margin-top: 80px;
+        width: 100%;
+        height: 90vh;
+    }
+    .skills-name {
+        font-size: 13px;
+    }
+    .second {
+        margin-left: 50px;
+        width: 50%;
+    }
+    .front {
+        margin-left: 25px;
+        font-size: 18px;
+    }
+    .lang {
+        font-size: 14px;
+        margin-top: 15px;
+        color: #0537fd;
+    }
+    .bar {
+        width: 110%;
+        height: 15px;
+    }
+    .perc {
+        position: relative;
+        display: block;
+        width: 90%;
+        height: 15px;
+        background: #ffa200;
+        border-radius: 25px;
+        animation: progress 0.4s ease-in-out forwards;
+    }
+    .tip {
+        position: absolute;
+        right: -16px;
+        top: -28px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        padding: 4px 6px;
+        border-radius: 5px;
+        background: #ffa200;
+    }
+    .second.third {
+        margin-top: 30px;
+        margin-left: 90px;
+    }
+    .second.forth {
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+    .second.fifth {
+        margin-top: 30px;
+        margin-left: 90px;  
+     }
+
+
+
+
+
+
+
+    
+/* About me page */
+
+    /* hero section */
+    .about2 {
+        width: 100%;
+        height: 69vh;
+        margin-top: 80px;
+    }
+    .photo2 {
+        width: 100px;
+        height: 10vh;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .aboutme2 {
+        width: 90%;
+        margin-right: 20px;
+        margin-top: 100px;
+        margin-left: 15px;
+        line-height: 1;
+    }
+    .aboutme2 p {
+        font-size: 17px;
+    }
+    p1 {
+        margin-left: 9px;
+        font-size: 20px;
+        color: #fd0202;
+    }
+}
